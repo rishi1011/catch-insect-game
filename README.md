@@ -2,5 +2,5 @@
 
 Catch the Insects that appear on your screen!!!
 
-<a href="https://rishi1011.github.io/catch-insect-game/"></a>
+<a href="https://rishi1011.github.io/catch-insect-game/">Live Demo</a>
 
