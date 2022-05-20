@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+    background-color: #516dff;
+    color: #fff;
+}
+
+.no-select {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                      supported by Chrome and Opera */
+}
+
+.screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    transition: 0.5s ease-out;
+}
+
+.screen.up {
+    margin-top: -100vh;
+}
+
+.play-game {
+    padding: 0.5rem 1rem;
+    font-family: inherit;
+    color: #516dff;
+    background-color: #fff;
+    border-color: #516dff;
+    cursor: pointer;
+}
+
+.play-game:focus {
+    outline: 0;
+}
+
+.play-game:active {
+    opacity: 0.9;
+}
+
+.insects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.insects img {
+    height: 100px;
+    width: 100px;
+}
+
+.insects .choose-insect-btn {
+    background-color: transparent;
+    border: 2px solid #fff;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-family: inherit;
+}
+
+.insects .choose-insect-btn:hover {
+    background-color: #fff;
+    color: #516dff;
+}
+
+.insects .choose-insect-btn:active {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.game-container {
+    position: relative;
+}
+
+.time,
+.score {
+    position: absolute;
+    top: 20px;
+}
+
+.time {
+    left: 20px;
+}
+
+.score {
+    right: 20px;
+}
+
+.message {
+    width: 100%;
+    padding: 1rem;
+    line-height: 1.7;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 100px;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-out;
+    z-index: 100;
+}
+
+.message.visible {
+    transform: translateX(0);
+}
+
+.insect {
+    cursor: pointer;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.3s ease-out;
+}
+
+.insect.caught {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.insect img {
+    width: 80px;
+    height: 80px;
+}

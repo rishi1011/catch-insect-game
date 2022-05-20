@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Catch Insect Game</title>
+    <script src="https://kit.fontawesome.com/ff64e45630.js" crossorigin="anonymous" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body class="no-select">
+    <div class="screen">
+        <h1>Catch The Insect</h1>
+        <button class="btn play-game">Play Game</button>
+    </div>
+
+    <div class="screen">
+        <h1>What is your "favorite" insect?</h1>
+        <ul class="insects">
+            <li><button class="choose-insect-btn">Fly <br>
+                    <img src="./images/fly_PNG3958.png" alt="">
+                </button></li>
+
+            <li><button class="choose-insect-btn">Mosquito
+                    <br>
+                    <img src="./images/mosquito_PNG18165.png" alt="">
+                </button></li>
+            <li><button class="choose-insect-btn">Spider <br><img src="./images/spider_PNG12.png" alt=""></button></li>
+            <li><button class="choose-insect-btn">Roach <br>
+                    <img src="./images/roach_PNG12163.png" alt="">
+                </button></li>
+        </ul>
+    </div>
+
+    <div class="screen game-container" id="game-container">
+        <h2 class="time">Time: 0:00</h2>
+        <h2 class="score">Score: 0</h2>
+        <h5 class="message">Aren't you annoyed yet? <br>You are playing an impossible game.</h5>
+    </div>
+</body>
+
+</html>
